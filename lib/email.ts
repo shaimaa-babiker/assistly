@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 // ---------------------------------------------------------------------------
 // Config — Gmail SMTP with App Password
 // ---------------------------------------------------------------------------
-const GMAIL_USER  = process.env.GMAIL_USER?.trim();       // e.g. supportoptika@gmail.com
+const GMAIL_USER  = process.env.GMAIL_USER?.trim();
 const GMAIL_PASS  = process.env.GMAIL_APP_PASSWORD?.trim(); // 16-char App Password from Google
 const ADMIN_EMAIL = (process.env.ADMIN_NOTIFY_EMAIL ?? GMAIL_USER ?? "").trim();
 
